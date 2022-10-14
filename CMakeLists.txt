@@ -15,7 +15,7 @@ FetchContent_Declare(
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
-add_executable(learn_program_design part_1.cpp part_2.cpp part_3.cpp part_4.cpp part_5.cpp)
+add_executable(learn_program_design part_1.cpp part_2.cpp part_3.cpp part_4.cpp part_5.cpp part_6.cpp)
 
 target_link_libraries(learn_program_design gtest gtest_main)
 
