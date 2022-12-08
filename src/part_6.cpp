@@ -88,7 +88,7 @@ TEST(Part6_Test, BinarySearch) {
     EXPECT_EQ(5, binarySearch(a, 10, 5));
 }
 
-void myStrcpy(const char *source, char *target) {
+void myStringCopy(const char *source, char *target) {
     int index = 0;
     while (source[index] != '\0') {
         target[index] = source[index];
@@ -101,7 +101,7 @@ void myStrcpy(const char *source, char *target) {
 TEST(Part6_Test, MyStrcpy) {
     char str1[20] = "Hello World!";
     char str2[20];
-    myStrcpy(str1, str2);
+    myStringCopy(str1, str2);
     for (int i = 0; str1[i] != '\0'; ++i) {
         EXPECT_EQ(str1[i], str2[i]);
     }

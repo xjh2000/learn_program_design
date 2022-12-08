@@ -17,7 +17,7 @@ FetchContent_MakeAvailable(googletest)
 
 file(GLOB_RECURSE SOURCES  src/*.*)
 
-add_executable(learn_program_design ${SOURCES})
+add_executable(learn_program_design ${SOURCES} )
 
 target_link_libraries(learn_program_design gtest gtest_main)
 
